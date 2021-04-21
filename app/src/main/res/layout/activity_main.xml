@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/pink"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="BMI"
+        android:textSize="40dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcuclate your body mass"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Input Your Body Weight"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/edweight"
+                android:hint="Kg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Input Your Body Height"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:id="@+id/edheight"
+                    android:hint="M"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btncal"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:background="@color/pinkputih"
+                android:text="Calculate"
+                android:onClick="Klik"
+                android:textColor="#E91E63"
+                app:backgroundTint="@color/pinkputih" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Result : "
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/result"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:textColor="@color/pink"
+                    android:textSize="30dp"
+                    android:background="@color/white"
+                    android:text="24,5"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:layout_margin="20dp"/>
+
+                <TextView
+                    android:id="@+id/ket"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:textColor="@color/pink"
+                    android:background="@color/white"
+                    android:textSize="30dp"
+                    android:text="normal"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_margin="20dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
